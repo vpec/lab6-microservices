@@ -1,0 +1,40 @@
+plugins {
+    id 'io.spring.dependency-management' version '1.0.8.RELEASE'
+    id 'org.springframework.boot' version '2.1.8.RELEASE'
+}
+
+allprojects {
+    apply plugin: 'idea'
+    apply plugin: 'eclipse'
+}
+
+subprojects {
+
+    apply plugin: 'org.springframework.boot'
+    apply plugin: 'io.spring.dependency-management'
+    apply plugin: 'java'
+
+    repositories {
+        mavenCentral()
+    }
+
+    dependencies {
+        runtime "com.sun.xml.bind:jaxb-core:2.3.0"
+        runtime "com.sun.xml.bind:jaxb-impl:2.3.0"
+        runtime "javax.xml.bind:jaxb-api:2.3.0"
+        runtime "javax.activation:activation:1.1.1"
+    }
+
+    dependencyManagement {
+        imports {
+            mavenBom 'org.springframework.cloud:spring-cloud-dependencies:Greenwich.SR2'
+        }
+    }
+
+    sourceCompatibility = 1.8
+    targetCompatibility = 1.8
+
+    tasks.withType(JavaCompile) {
+        options.compilerArgs << "-Xlint:deprecation"
+    }
+}
