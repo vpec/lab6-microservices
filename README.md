@@ -9,3 +9,4 @@ Please, go to the [Wiki](https://github.com/UNIZAR-30246-WebEngineering/lab6-mic
 | 739274 | [Naval Alcalá](https://github.com/aeri) |[test](https://github.com/aeri/lab6-microservices/tree/test) | |
 | 735508 | [Ignacio Galve](https://github.com/IgnacioSan22) |[test](https://github.com/IgnacioSan22/lab6-microservices/tree/test) | |
 | 806420 | [Julio Salceda](https://github.com/phsxes) |[test](https://github.com/phsxes/lab6-microservices/tree/test) | |
+| 721615 | [Eduardo Gimeno](https://github.com/EduardoGimeno) |[test](https://github.com/EduardoGimeno/lab6-microservices/tree/test) | |
